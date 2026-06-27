@@ -20,12 +20,9 @@ C. Question: If a randomly chosen chip is flagged by the scanner as defective, w
 
 D. Data To Input:
 What is the probability of B given A? Pr(B|A): 0.98
-
 What is the probability of B not given A? Pr(B|notA): 0.05
-
 What is the probability of A? Pr(A): 0.02
-
 What is the probability of notA? Pr(notA): 0.98
 
 E. Answer:
-The calculated probability of Pr(A|B) is: 28.57 %
+The calculated probability of Pr(A|B) is: 28.57 
