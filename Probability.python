@@ -1,0 +1,12 @@
+print("Welcome to your Probability Calculator!")
+
+#Taking user input for Bayes Theorem Equation
+Pr(B|A) = float(input("Enter the probability of Pr(B|A): "))
+Pr(B) = float(input("Enter the probability of Pr(B): "))
+Pr(A) = float(input("Enter the probability of Pr(A): "))
+
+#Calculating the result as a decimal value
+Value = print("The probability of Pr(A|B) is: ", Pr(B|A)/Pr(B)*Pr(A))
+
+#Tranforming value into a percentage
+print(round(Value*100, 2), "%")
