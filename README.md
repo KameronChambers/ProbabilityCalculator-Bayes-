@@ -16,13 +16,13 @@ Data must be inputed as decimal values between 0.0 and 1.0
 Sample Test Run: 
 A. Scenario: A high-tech factory uses an automated scanner to detect defective computer chips on an assembly line. If a chip is defective, the scanner correctly flags it as defective 98% of the time. If the chip is not defective, the scanner correctly clear is (labels it as non-defective) only 95% of the time. Statistically, only 2% of all chips produced on this assembly line are actually defective.
 
-b. Question: If a randomly chosen chip is flagged by the scanner as defective, what is the probability that the chip is actually defective?
+B. Question: If a randomly chosen chip is flagged by the scanner as defective, what is the probability that the chip is actually defective?
 
 C. Data To Input:
-What is the probability of B given A? Pr(B|A): 0.98
-What is the probability of B not given A? Pr(B|notA): 0.05
-What is the probability of A? Pr(A): 0.02
-What is the probability of notA? Pr(notA): 0.98
+What is the probability of B given A? Pr(B|A): 0.98 | 
+What is the probability of B not given A? Pr(B|notA): 0.05 | 
+What is the probability of A? Pr(A): 0.02 | 
+What is the probability of notA? Pr(notA): 0.98 | 
 
 D. Answer:
 The calculated probability of Pr(A|B) is: 28.57 
