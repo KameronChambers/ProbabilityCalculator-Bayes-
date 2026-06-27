@@ -1,16 +1,22 @@
-print("Welcome to your Bayes Theorem Probability Calculator")
+print("Welcome to your Byers Probability Calculator")
+print("Insert answers as decimals instead of whole numbers: (eg; 99% -> 0.99)")
 
-#Having user input known data into the equation by part
-P1 = float(input("What is the probability of occurance given your input?: "))
-P2 = float(input("What is the probability of no occruance given your input?: "))
-P3 = float(input("What is the probability of occurance?: "))
-P4 = float(input("What is the probability of no occurance?: "))
+#Gathering user input for equations
+pb_given_a = float(input("What is the probability of B given A? Pr(B|A): "))
+pb_notgiven_a = float(input("What is the probability of B not given A? Pr(B|notA): "))
+p_a = float(input("What is the probability of A? Pr(A): "))
+pnot_a = float(input("What is the probability of notA? Pr(notA): "))
 
-#Taking user data and solving for the unknown numerical value
-P5 = round((P1*P3)+(P2*P4) ,2)
+#Calculating missing numerical value (p_b) Pr(B)
+#The total probability of B occuring at all
+p_b = (pb_given_a * p_a) + (pb_notgiven_a * pnot_a)
 
-#Solving for probability in decimal form using Bayes Theorem
-Answer = ((P1/P5) * P3)
+#Calculating the final answer using Byers Theorem
+# Pr(A|B) = (Pr(B|A) * Pr(A)) / Pr(B)
+Answer = (pb_given_a*p_a)/p_b
 
-#Printing answer in percentage form
-print("The calculated probability to your question is:", round((Answer * 100, 2))
+#Turning answer into a percentage
+Percentage = round(Answer*100, 2)
+
+#Print results as a percentage
+print("The calculated probability of Pr(A|B) is:", Percentage, "%")
